@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --inter-font: "Inter", sans-serif;
+  --cormorant-font: "Cormorant Garamond", serif;
+
+  /* color */
+  --orange-500: #ff6348;
+  --yellow-500: #ffa502;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+  font-family: var(--inter);
+}
+
+ul {
+  list-style: none;
+}
