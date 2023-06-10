@@ -2,13 +2,12 @@ import "./Navbar.css";
 
 export const Navbar = () => {
   return (
-    <nav>
-      <h1>Pepitos nav</h1>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-      </ul>
+    <nav className="navbar">
+      <div className="navbar--logo">
+        <h1>Pepitos</h1>
+      </div>
+
+      <button>Menu</button>
     </nav>
   );
 };
