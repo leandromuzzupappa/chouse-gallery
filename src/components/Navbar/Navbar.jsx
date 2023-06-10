@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { CartWidget } from "../CartWidget/CartWidget";
 
 import "./Navbar.css";
+import { NavbarMenu } from "../NavbarMenu/NavbarMenu";
+import { CartWidget } from "../CartWidget/CartWidget";
 
 export const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -12,11 +13,10 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className={`navbar ${navbarOpen ? "navbar-active" : ""}`}>
+      <nav className="navbar" data-active={navbarOpen}>
         <button
-          className={`navbar-menu--btn ${
-            navbarOpen ? "navbar-menu--btn-active" : ""
-          }`}
+          className="navbar-menu--btn"
+          data-active={navbarOpen}
           onClick={onMenuClick}
         >
           <span></span>
@@ -35,7 +35,7 @@ export const Navbar = () => {
         </div>
       </nav>
 
-      {navbarOpen && <h1>mostrar menu</h1>}
+      <NavbarMenu isOpen={navbarOpen} />
     </>
   );
 };
