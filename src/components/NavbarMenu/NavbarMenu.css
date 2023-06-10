@@ -1,3 +1,8 @@
 .navbarMenu {
   border: 1px solid red;
+  display: none;
+}
+
+.navbarMenu[data-open="true"] {
+  display: block;
 }
