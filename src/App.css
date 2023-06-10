@@ -21,7 +21,7 @@ h5,
 h6,
 span,
 p {
-  font-family: var(--inter);
+  font-family: var(--inter-font);
 }
 
 ul {
