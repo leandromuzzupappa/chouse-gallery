@@ -1,6 +1,12 @@
 :root {
   --navbar-padding: 0.2rem 1rem;
   --navbar-color: black;
+  --btn-width: 60px;
+  --btn-span-width: 1rem;
+  --btn-span-height: 2px;
+  --btn-span-space-h: 15%;
+  --btn-span-space-v: 6%;
+  --btn-span-color: black;
 }
 
 .navbar {
@@ -39,7 +45,146 @@
   top: 0%;
 }
 
-.navbar--logo h1 {
+.navbar--logo h2 {
   margin-left: 0.5rem;
   font-family: var(--cormorant-font);
+}
+
+.navbar--logo h2 {
+  font-size: 32px;
+}
+
+.navbar--actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar--actions button {
+  border: 0;
+  background: none;
+  padding: 0.5rem;
+  color: var(--navbar-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.cart--count,
+.cart--icon {
+  transition-delay: 0.5s;
+}
+
+.cart--count {
+  font-weight: 300;
+  transition: scale 0.3s ease-in-out;
+}
+
+.cart--icon path {
+  fill: var(--navbar-color);
+  transition: fill 0.3s ease-in-out;
+}
+
+.cart:hover {
+  scale: 1.1 1;
+}
+
+.login:hover,
+.cart:hover {
+  color: var(--yellow-500);
+}
+
+.cart:hover .cart--icon path {
+  fill: var(--yellow-500);
+}
+
+.navbar-menu--btn {
+  position: relative;
+  width: var(--btn-width);
+  aspect-ratio: 1/1;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-menu--btn span {
+  position: absolute;
+  display: block;
+  width: var(--btn-span-width);
+  height: var(--btn-span-height);
+  background: var(--btn-span-color);
+  top: 50%;
+  translate: 0% -50%;
+  transform-origin: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* left spans */
+.navbar-menu--btn span:nth-child(1),
+.navbar-menu--btn span:nth-child(2) {
+  left: var(--btn-span-space-h);
+}
+
+/* right spans */
+.navbar-menu--btn span:nth-child(3),
+.navbar-menu--btn span:nth-child(4) {
+  right: var(--btn-span-space-h);
+}
+
+/* vertical position span */
+.navbar-menu--btn span:nth-child(1) {
+  top: calc(50% - 6%);
+}
+
+.navbar-menu--btn span:nth-child(4) {
+  top: calc(50% + 6%);
+}
+
+/* Hover */
+.navbar-menu--btn:hover span {
+  background: var(--yellow-500);
+}
+
+.navbar-menu--btn-active span,
+.navbar-menu--btn:hover span {
+  scale: 0.8 1;
+}
+
+.navbar-menu--btn-active span:nth-child(1),
+.navbar-menu--btn:hover span:nth-child(1) {
+  left: 50%;
+  translate: -50% -50%;
+}
+
+.navbar-menu--btn-active span:nth-child(2),
+.navbar-menu--btn:hover span:nth-child(2) {
+  left: calc(var(--btn-span-space-h) - 5%);
+}
+
+.navbar-menu--btn-active span:nth-child(4),
+.navbar-menu--btn:hover span:nth-child(4) {
+  right: 50%;
+  translate: 50% -50%;
+}
+
+.navbar-menu--btn-active span:nth-child(3),
+.navbar-menu--btn:hover span:nth-child(3) {
+  right: calc(var(--btn-span-space-h) - 5%);
+}
+
+/* Active */
+.navbar-menu--btn-active:not(:hover) span:nth-child(1),
+.navbar-menu--btn-active:not(:hover) span:nth-child(4) {
+  scale: 1.5 1;
+}
+
+.navbar-menu--btn-active:not(:hover) span:nth-child(2) {
+  transform-origin: left;
+  scale: 0.5 1;
+}
+
+.navbar-menu--btn-active:not(:hover) span:nth-child(3) {
+  transform-origin: right;
+  scale: 0.5 1;
 }
