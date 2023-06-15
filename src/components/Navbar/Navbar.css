@@ -70,32 +70,8 @@
   transition: all 0.3s ease-in-out;
 }
 
-.cart--count,
-.cart--icon {
-  transition-delay: 0.5s;
-}
-
-.cart--count {
-  font-weight: 300;
-  transition: scale 0.3s ease-in-out;
-}
-
-.cart--icon path {
-  fill: var(--navbar-color);
-  transition: fill 0.3s ease-in-out;
-}
-
-.cart:hover {
-  scale: 1.1 1;
-}
-
-.login:hover,
-.cart:hover {
+.login:hover {
   color: var(--yellow-500);
-}
-
-.cart:hover .cart--icon path {
-  fill: var(--yellow-500);
 }
 
 .navbar-menu--btn {
