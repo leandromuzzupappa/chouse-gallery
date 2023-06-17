@@ -111,9 +111,6 @@
   font-family: var(--cormorant-font);
 }
 
-.navbarMenu hr {
-}
-
 .navbarMenu--links {
   position: absolute;
   bottom: 1rem;
