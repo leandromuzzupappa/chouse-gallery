@@ -35,7 +35,7 @@ export const Navbar = () => {
         </div>
       </nav>
 
-      <NavbarMenu isOpen={navbarOpen} />
+      <NavbarMenu isOpen={navbarOpen} onClose={onMenuClick} />
     </>
   );
 };
