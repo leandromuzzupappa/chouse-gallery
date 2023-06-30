@@ -8,8 +8,10 @@ import {
   useScroll,
 } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-import { ArtGallery } from "../models/ArtGallery/ArtGallery";
+
+/* import { ArtGallery } from "../models/ArtGallery/ArtGallery"; */
 import { ArtGalleryLow } from "../models/ArtGalleryLow/ArtGalleryLow";
+import { ArtGalleryTest } from "../models/ArtGalleryTest/ArtGalleryTest";
 
 export const Experience = () => {
   const cameraRef = useRef(null);
@@ -50,8 +52,8 @@ export const Experience = () => {
 
   const shape = useMemo(() => {
     const shape = new THREE.Shape();
-    shape.moveTo(0, -0.2);
-    shape.lineTo(0, 0.2);
+    shape.moveTo(0, -0.05);
+    shape.lineTo(0, 0.05);
 
     return shape;
   }, []);
@@ -66,7 +68,7 @@ export const Experience = () => {
 
     const currentPoint = linePoints[currentPointIndex];
 
-    console.log(currentPointIndex, currentPoint);
+    //console.log(currentPointIndex, currentPoint);
     currentPoint.y = 2;
     cameraRef.current?.position.lerp(currentPoint, delta * 24);
   });
@@ -75,26 +77,39 @@ export const Experience = () => {
     <>
       <OrbitControls makeDefault enableZoom={false} />
 
+      {/* <ambientLight intensity={0.1} color="red" /> */}
       <TransformControls mode="translate" position={[0, 0, 0]}>
-        <pointLight position={[0, 5, 0]} intensity={0.6} color="#fff5e2" />
+        <pointLight position={[0, 5, 0]} intensity={0.1} color="#fff5e2" />
       </TransformControls>
 
-      <PerspectiveCamera
-        ref={cameraRef}
-        position={[0, 1, 5]}
-        fov={75}
-        makeDefault
-      />
+      <group ref={cameraRef}>
+        <PerspectiveCamera position={[0, 0, 0]} fov={75} makeDefault />
+      </group>
 
-      <mesh>
-        <boxGeometry />
-        <meshStandardMaterial color="green" />
-      </mesh>
+      <TransformControls
+        mode="translate"
+        position={[-1, 0.3, 2]}
+        showX={true}
+        showZ={true}
+        showY={true}
+      >
+        <group scale={0.4} position={[0, -0.05, 0]}>
+          <pointLight position={[0, 0, 0]} color="#932fda" intensity={0.5} />
+          <mesh position={[0, 0, 0]}>
+            <boxGeometry />
+            <meshStandardMaterial
+              color="white"
+              emissive="white"
+              emissiveIntensity={10}
+            />
+          </mesh>
+        </group>
+      </TransformControls>
 
       {/* <ArtGalleryLow /> */}
 
-      <group position-y={0.5}>
-        <mesh>
+      <group position-y={0.1}>
+        <mesh opacity={0.2}>
           <extrudeGeometry
             args={[
               shape,
@@ -102,16 +117,17 @@ export const Experience = () => {
                 steps: linePointsCount,
                 bevelEnabled: false,
                 extrudePath: curve,
+                transparent: true,
               },
             ]}
           />
 
-          <meshBasicMaterial color="red" opacity={0.7} transparent />
+          <meshBasicMaterial color="white" opacity={0.2} transparent />
         </mesh>
       </group>
 
       <Suspense fallback={<ArtGalleryLow />}>
-        <ArtGallery />
+        <ArtGalleryTest />
       </Suspense>
     </>
   );
