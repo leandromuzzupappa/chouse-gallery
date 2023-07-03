@@ -71,6 +71,19 @@ export const Experience = () => {
     //console.log(currentPointIndex, currentPoint);
     currentPoint.y = 2;
     cameraRef.current?.position.lerp(currentPoint, delta * 24);
+    /* cameraRef.current?.lookAt(linePoints[currentPointIndex + 1]); */
+
+    // rotate the camera to look at the next point
+    const nextPoint = linePoints[currentPointIndex + 1];
+    if (nextPoint) {
+      cameraRef.current?.lookAt(nextPoint);
+    }
+
+    // rotate the camera to look at the previous point
+    const previousPoint = linePoints[currentPointIndex - 1];
+    if (previousPoint) {
+      cameraRef.current?.lookAt(previousPoint);
+    }
   });
 
   return (
@@ -82,9 +95,12 @@ export const Experience = () => {
         <pointLight position={[0, 5, 0]} intensity={0.1} color="#fff5e2" />
       </TransformControls>
 
-      <group ref={cameraRef}>
-        <PerspectiveCamera position={[0, 0, 0]} fov={75} makeDefault />
-      </group>
+      <PerspectiveCamera
+        ref={cameraRef}
+        position={[0, 0, 0]}
+        fov={75}
+        makeDefault
+      />
 
       <TransformControls
         mode="translate"

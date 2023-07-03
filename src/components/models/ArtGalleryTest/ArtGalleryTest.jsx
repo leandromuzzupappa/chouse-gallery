@@ -1,8 +1,28 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/no-unknown-property */
+
+import { useEffect, useRef } from "react";
+import { useThree } from "@react-three/fiber";
 import { useGLTF, MeshReflectorMaterial } from "@react-three/drei";
 
-export const ArtGalleryTest = (props) => {
+export const ArtGalleryTest = ({ ...props }) => {
   const { nodes, materials } = useGLTF("/models/art_gallery_test/scene.gltf");
+  const { scene } = useThree();
+
+  const paintingRef1 = useRef(null);
+  const paintingRef2 = useRef(null);
+  const paintingRef3 = useRef(null);
+  const paintingRef4 = useRef(null);
+
+  useEffect(() => {
+    console.log("aaaaa", scene);
+
+    const painting1 = paintingRef1.current;
+
+    console.log("painting1", painting1.geometry.attributes.position.array);
+  }, []);
+
   return (
     <group {...props} dispose={null}>
       <group scale={0.01}>
@@ -68,18 +88,22 @@ export const ArtGalleryTest = (props) => {
         </group>
         <group rotation={[-Math.PI / 2, 0, 0.1]} scale={100}>
           <mesh
+            ref={paintingRef1}
             geometry={nodes.PaitingsInside_1.geometry}
             material={materials.Painting}
           />
           <mesh
+            ref={paintingRef2}
             geometry={nodes.PaitingsInside_2.geometry}
             material={materials.Painting}
           />
           <mesh
+            ref={paintingRef3}
             geometry={nodes.PaitingsInside_3.geometry}
             material={materials.Painting}
           />
           <mesh
+            ref={paintingRef4}
             geometry={nodes.PaitingsInside_4.geometry}
             material={materials.Painting}
           />
