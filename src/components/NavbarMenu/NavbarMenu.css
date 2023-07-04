@@ -16,7 +16,7 @@
   --navbar-menu-list-margin: 1.5rem 0 0;
   --navbar-menu-list-font-size: 18px;
 
-  position: absolute;
+  position: fixed;
   top: var(--navbar-menu-top);
   left: var(--navbar-menu-left);
   width: var(--navbar-menu-width);
@@ -44,7 +44,7 @@
 }
 
 .navbarMenu-overlay {
-  position: absolute;
+  position: fixed;
   inset: 0;
   width: 100%;
   height: 100%;
