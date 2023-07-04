@@ -1,0 +1,9 @@
+.product {
+  max-width: 500px;
+}
+
+.product img {
+  display: block;
+  width: 100%;
+  border: none;
+}
