@@ -1,6 +1,6 @@
-import { useState } from "react";
-
 import "./Navbar.css";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { NavbarMenu } from "../NavbarMenu/NavbarMenu";
 import { CartWidget } from "../CartWidget/CartWidget";
 
@@ -9,6 +9,10 @@ export const Navbar = () => {
 
   const onMenuClick = () => {
     setNavbarOpen(!navbarOpen);
+  };
+
+  const onLogoClick = () => {
+    if (navbarOpen) setNavbarOpen(false);
   };
 
   return (
@@ -26,7 +30,9 @@ export const Navbar = () => {
         </button>
 
         <div className="navbar--logo">
-          <h2>Pepitos</h2>
+          <Link to="/" onClick={onLogoClick}>
+            <h2>Pepitos</h2>
+          </Link>
         </div>
 
         <div className="navbar--actions">

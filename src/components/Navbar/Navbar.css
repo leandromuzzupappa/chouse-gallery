@@ -45,12 +45,15 @@
   top: 0%;
 }
 
-.navbar--logo h2 {
-  margin-left: 0.5rem;
-  font-family: var(--cormorant-font);
+.navbar--logo a {
+  text-decoration: none;
+  color: var(--navbar-color);
+  transition: color 0.3s ease-in-out;
 }
 
 .navbar--logo h2 {
+  margin-left: 0.5rem;
+  font-family: var(--cormorant-font);
   font-size: 32px;
 }
 
