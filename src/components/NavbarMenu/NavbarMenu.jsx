@@ -149,7 +149,10 @@ export const NavbarMenu = ({ isOpen, onClose }) => {
             <li key={id} className="navbarMenu--list-item">
               <NavLink
                 to={`/${slug}`}
-                activeclassname="navbarMenu--list-item-active"
+                className={({ isActive }) =>
+                  isActive ? "navbarMenu--list-item-active" : ""
+                }
+                onClick={onClose}
               >
                 <span>0{i}</span> {name}
               </NavLink>

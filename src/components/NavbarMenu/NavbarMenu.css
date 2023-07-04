@@ -111,6 +111,10 @@
   font-family: var(--cormorant-font);
 }
 
+.navbarMenu--list-item .navbarMenu--list-item-active {
+  color: var(--yellow-500);
+}
+
 .navbarMenu--links {
   position: absolute;
   bottom: 1rem;
