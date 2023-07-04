@@ -1,4 +1,5 @@
-import { GalleryPage } from "./pages/Gallery/GalleryPage";
+import { Routes, Route } from "react-router-dom";
+import { routes } from "./data/routes";
 import { Navbar } from "./components/Navbar/Navbar";
 import "./App.css";
 
@@ -6,7 +7,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <GalleryPage />
+
+      <Routes>
+        {routes.map((route) => (
+          <Route key={route.id} path={route.path} element={<route.element />} />
+        ))}
+      </Routes>
     </>
   );
 }
