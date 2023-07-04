@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { NavLink } from "react-router-dom";
 import gsap from "gsap";
-import { galleries } from "../../data/data";
+import { getCategories } from "../../services/categoryService";
 import "./NavbarMenu.css";
 
 export const NavbarMenu = ({ isOpen, onClose }) => {
@@ -11,6 +12,17 @@ export const NavbarMenu = ({ isOpen, onClose }) => {
   const categoriesRef = useRef(null);
   const linksRef = useRef(null);
   const overlayRef = useRef(null);
+
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    const getCategoriesData = async () => {
+      const categoriesData = await getCategories();
+      setCategories(categoriesData);
+    };
+
+    getCategoriesData();
+  }, []);
 
   useEffect(() => {
     const timeline = gsap.timeline({ paused: true });
@@ -133,11 +145,14 @@ export const NavbarMenu = ({ isOpen, onClose }) => {
         </h3>
 
         <ul ref={categoriesRef} className="navbarMenu--list">
-          {galleries.map(({ id, name, link }, i) => (
+          {categories.map(({ id, name, slug }, i) => (
             <li key={id} className="navbarMenu--list-item">
-              <a href={link}>
+              <NavLink
+                to={`/${slug}`}
+                activeclassname="navbarMenu--list-item-active"
+              >
                 <span>0{i}</span> {name}
-              </a>
+              </NavLink>
             </li>
           ))}
         </ul>
