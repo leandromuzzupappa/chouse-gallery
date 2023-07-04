@@ -15,7 +15,7 @@ export const routes = [
   },
   {
     id: 2,
-    path: "/:productId/?:productName",
+    path: "/:productId/:productName",
     element: ProductPage,
   },
 ];
