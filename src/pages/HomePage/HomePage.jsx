@@ -1,4 +1,4 @@
-import "./HomePage.css";
+import "./Homepage.css";
 import { useEffect, useState } from "react";
 import { ProductCard } from "../../components/ProductCard/ProductCard";
 import { getProducts } from "../../services/productService";
