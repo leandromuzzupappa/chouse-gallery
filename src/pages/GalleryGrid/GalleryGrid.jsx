@@ -1,8 +1,9 @@
+import "./GalleryGrid.css";
 import { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { getCategoryBySlug } from "../../services/categoryService";
 import { getProductsByCategorySlug } from "../../services/productService";
-import { handleProductName } from "../../utils/utils";
+import { ProductCard } from "../../components/ProductCard/ProductCard";
 
 export const GalleryGrid = () => {
   const { categoryName } = useParams();
@@ -21,21 +22,17 @@ export const GalleryGrid = () => {
     getCategoryData();
   }, [categoryName]);
 
-  const handleProductLink = ({ id, name }) => {
-    return `/${id}/${handleProductName(name)}`;
-  };
-
   return (
-    <>
-      <h1>{category.name}</h1>
+    <section className="gallery-page">
+      <h1 className="gallery-page--title">{category.name}</h1>
 
-      <ul>
+      <ul className="gallery-page--grid">
         {products.map((product) => (
-          <li key={product.id}>
-            <Link to={handleProductLink(product)}>{product.name}</Link>
+          <li key={product.id} className="gallery-page--grid-item">
+            <ProductCard {...product} />
           </li>
         ))}
       </ul>
-    </>
+    </section>
   );
 };
