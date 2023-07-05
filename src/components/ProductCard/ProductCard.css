@@ -1,0 +1,50 @@
+:root {
+  --product-card-info-padding: 1rem 0 0;
+}
+
+.product-card {
+  width: 100%;
+  transition: filter 0.3s ease;
+}
+
+.product-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-card--media {
+  overflow: hidden;
+  transition: border-radius 0.3s cubic-bezier(0.6, 0.1, 0.1, 0.74);
+}
+
+.product-card:hover .product-card--media {
+  border-radius: 32px;
+}
+
+.product-card--media img {
+  width: 100%;
+  display: block;
+  border: 0;
+  transition: scale 0.3s ease;
+}
+
+.product-card:hover .product-card--media img {
+  scale: 1.2;
+}
+
+.product-card--info {
+  padding: var(--product-card-info-padding);
+}
+
+.product-card--info h3 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  scale: 1;
+  transition: scale 0.2s ease-in-out;
+  transform-origin: left center;
+}
+
+.product-card:hover .product-card--info h3 {
+  scale: 1.2;
+  font-weight: 700;
+}
