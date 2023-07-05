@@ -15,3 +15,18 @@
   column-gap: 3rem;
   row-gap: 3rem;
 }
+
+@media screen and (max-width: 1000px) {
+  .homepage {
+    background-size: 16px 16px;
+  }
+
+  .homepage--grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-content: center;
+
+    & .homepage--grid-item:nth-child(2n + 3) {
+      grid-column: 1 / span 2;
+    }
+  }
+}
