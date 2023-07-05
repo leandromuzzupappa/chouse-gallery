@@ -1,0 +1,17 @@
+.homepage {
+  --homepage-padding: 6rem 2rem 2rem 2rem;
+
+  background-color: #79b355;
+  background-image: linear-gradient(#56a559 1.6px, transparent 1.6px),
+    linear-gradient(to right, #56a559 1.6px, #79b355 1.6px);
+  background-size: 52px 52px;
+  background-attachment: fixed;
+  padding: var(--homepage-padding);
+}
+
+.homepage--grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  column-gap: 3rem;
+  row-gap: 3rem;
+}

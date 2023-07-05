@@ -1,5 +1,6 @@
+import "./HomePage.css";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { ProductCard } from "../../components/ProductCard/ProductCard";
 import { getProducts } from "../../services/productService";
 
 export const HomePage = () => {
@@ -15,17 +16,14 @@ export const HomePage = () => {
   }, []);
 
   return (
-    <>
-      <h1>homepage</h1>
-
-      <ul>
+    <section className="homepage">
+      <ul className="homepage--grid">
         {products.map((product) => (
-          <li key={product.id}>
-            {/* <Link to={`/products/${product.id}`}>{product.name}</Link> */}
-            <img alt="ImageName" src={product.image} />
+          <li key={product.id} className="homepage--grid-item">
+            <ProductCard {...product} />
           </li>
         ))}
       </ul>
-    </>
+    </section>
   );
 };
