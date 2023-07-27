@@ -2,11 +2,22 @@
   --gallery-width: 100vw;
   --gallery-height: 100vh;
   --gallery-padding: 6rem 2rem 2rem 2rem;
+  --bg-gradient-clr-1: #ebf3fc;
+  --bg-gradient-clr-2: #fff;
+  --bg-gradient-stroke: 1.2px;
+  --bg-size: 110px;
 
-  background-color: #79b355;
-  background-image: linear-gradient(#56a559 1.6px, transparent 1.6px),
-    linear-gradient(to right, #56a559 1.6px, #79b355 1.6px);
-  background-size: 52px 52px;
+  background-color: var(--bg-gradient-clr-2);
+  background-image: linear-gradient(
+      var(--bg-gradient-clr-1) var(--bg-gradient-stroke),
+      transparent var(--bg-gradient-stroke)
+    ),
+    linear-gradient(
+      to right,
+      var(--bg-gradient-clr-1) var(--bg-gradient-stroke),
+      var(--bg-gradient-clr-2) var(--bg-gradient-stroke)
+    );
+  background-size: var(--bg-size) var(--bg-size);
   background-attachment: fixed;
 
   min-height: var(--gallery-height);
