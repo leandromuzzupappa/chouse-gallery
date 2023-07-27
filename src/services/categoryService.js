@@ -15,8 +15,6 @@ export const getCategories = async () => {
     ...doc.data(),
   }));
 
-  console.log("categoriesData", categoriesData);
-
   return categoriesData;
 };
 
