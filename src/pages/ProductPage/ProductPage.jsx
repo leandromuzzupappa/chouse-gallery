@@ -2,6 +2,7 @@ import "./ProductPage.css";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import { getProductById } from "../../services/productService";
+import { ProductMedia } from "../../components/ProductMedia/ProductMedia";
 
 const pattern = Math.random() > 0.5 ? "bg-rectangles" : "bg-rhombus";
 
@@ -61,7 +62,7 @@ export const ProductPage = () => {
         </div>
       </div>
       <div className="product-page--media">
-        <img src={product.image} alt={product.name} />
+        {product.image && <ProductMedia image={product.image} />}
       </div>
     </section>
   );
