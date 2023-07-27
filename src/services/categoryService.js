@@ -18,6 +18,13 @@ export const getCategories = async () => {
   return categoriesData;
 };
 
+export const getCategoryById = async (id) => {
+  const snapshot = await getCategoriesSnapshot();
+  const category = snapshot.docs.find((doc) => doc.id === id);
+
+  return category.data();
+};
+
 export const getCategoryBySlug = async (slug) => {
   const snapshot = await getCategoriesSnapshot();
   const categoriesData = snapshot.docs.map((doc) => ({
