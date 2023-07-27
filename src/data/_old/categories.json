@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Photography",
+    "slug": "photography",
+    "pageTitle": "Photography - Amazing Photos and Shots",
+    "pageDescription": "Explore stunning photography from around the world in the Photography category."
+  },
+  {
+    "id": 2,
+    "name": "Illustration",
+    "slug": "illustration",
+    "pageTitle": "Illustration - Creative and Artistic Designs",
+    "pageDescription": "Discover imaginative and artistic illustrations in the Illustration category."
+  },
+  {
+    "id": 3,
+    "name": "Street Art",
+    "slug": "street-art",
+    "pageTitle": "Street Art - Urban Artworks and Graffiti",
+    "pageDescription": "Immerse yourself in the vibrant world of street art in the Street Art category."
+  },
+  {
+    "id": 4,
+    "name": "Digital Art",
+    "slug": "digital-art",
+    "pageTitle": "Digital Art - Innovative and Futuristic Creations",
+    "pageDescription": "Experience the future of art with cutting-edge digital creations in the Digital Art category."
+  }
+]
