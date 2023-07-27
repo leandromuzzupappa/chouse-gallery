@@ -18,15 +18,6 @@
     "category": "paintings"
   },
   {
-    "id": "3",
-    "image": "/images/products/p-3.jpg",
-    "name": "Molecular Dance",
-    "artist": "ODYSSEAS MOURELLOS",
-    "dimentions": "0.5 × 2.00 cm",
-    "price": "$4.750,00",
-    "category": "paintings"
-  },
-  {
     "id": "4",
     "image": "/images/products/p-4.jpg",
     "name": "Skin to Skin",
