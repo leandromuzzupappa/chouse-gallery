@@ -4,8 +4,8 @@
     "image": "/images/products/p-1.jpg",
     "name": "Multiplying Particles",
     "artist": "ODYSSEAS MOURELLOS",
-    "dimentions": "0.20 × 0.20 cm",
-    "price": "$1.750,00",
+    "dimensions": "0.20 × 0.20 cm",
+    "price": 1750,
     "category": "paintings"
   },
   {
@@ -13,8 +13,8 @@
     "image": "/images/products/p-2.jpg",
     "name": "Cosmic Void Discoveries",
     "artist": "ODYSSEAS MOURELLOS",
-    "dimentions": "1.90 × 1.50 cm",
-    "price": "$6.100,00",
+    "dimensions": "1.90 × 1.50 cm",
+    "price": 6100,
     "category": "paintings"
   },
   {
@@ -22,8 +22,8 @@
     "image": "/images/products/p-4.jpg",
     "name": "Skin to Skin",
     "artist": "AREA87",
-    "dimentions": "0.35 × 0.45 cm",
-    "price": "$1.300,00",
+    "dimensions": "0.35 × 0.45 cm",
+    "price": 1300,
     "category": "paintings"
   },
   {
@@ -31,8 +31,8 @@
     "image": "/images/products/p-5.jpg",
     "name": "Watering",
     "artist": "AREA87",
-    "dimentions": "0.60 × 0.80 cm",
-    "price": "$2.670,00",
+    "dimensions": "0.60 × 0.80 cm",
+    "price": 2670,
     "category": "paintings"
   },
   {
@@ -40,8 +40,8 @@
     "image": "/images/products/p-6.jpg",
     "name": "Vandalised st.Christine",
     "artist": "FRO",
-    "dimentions": "0.5 × 1.4 cm",
-    "price": "$5.650,00",
+    "dimensions": "0.5 × 1.4 cm",
+    "price": 5650,
     "category": "paintings"
   },
   {
@@ -49,8 +49,8 @@
     "image": "/images/products/p-7.jpg",
     "name": "Tripping and smiling",
     "artist": "FRO",
-    "dimentions": "0.5 × 0.7 cm",
-    "price": "$1.950,00",
+    "dimensions": "0.5 × 0.7 cm",
+    "price": 1950,
     "category": "paintings"
   },
   {
@@ -58,8 +58,8 @@
     "image": "/images/products/p-8.jpg",
     "name": "You're always smoking in my bed, don’t even mess what's in my head",
     "artist": "FRO",
-    "dimentions": "1.2 × 1.5 cm",
-    "price": "$12.800,00",
+    "dimensions": "1.2 × 1.5 cm",
+    "price": 12800,
     "category": "paintings"
   },
   {
@@ -67,8 +67,8 @@
     "image": "/images/products/p-9.jpg",
     "name": "Bust of Aphrodite",
     "artist": "FRO",
-    "dimentions": "0.5 × 0.7 cm",
-    "price": "$1.800,00",
+    "dimensions": "0.5 × 0.7 cm",
+    "price": 1800,
     "category": "paintings"
   },
   {
@@ -76,8 +76,8 @@
     "image": "/images/products/p-10.jpg",
     "name": "Christine's Dream",
     "artist": "FRO",
-    "dimentions": "0.5 × 0.7 cm",
-    "price": "$2.150,00",
+    "dimensions": "0.5 × 0.7 cm",
+    "price": 2150,
     "category": "paintings"
   },
   {
@@ -85,8 +85,8 @@
     "image": "/images/products/p-11.jpg",
     "name": "Sad Christine",
     "artist": "FRO",
-    "dimentions": "1 × 1.20 cm",
-    "price": "$5.800,00",
+    "dimensions": "1 × 1.20 cm",
+    "price": 5800,
     "category": "paintings"
   },
   {
@@ -94,8 +94,8 @@
     "image": "/images/products/p-12.jpg",
     "name": "Photo Manipulation",
     "artist": "FRO",
-    "dimentions": "0.5 × 0.7 cm",
-    "price": "$2.100,00",
+    "dimensions": "0.5 × 0.7 cm",
+    "price": 2100,
     "category": "paintings"
   },
   {
@@ -103,8 +103,8 @@
     "image": "/images/products/p-13.jpg",
     "name": "Overlap",
     "artist": "ONEBRAN",
-    "dimentions": "0.40 × 0.49 cm",
-    "price": "$1.600,00",
+    "dimensions": "0.40 × 0.49 cm",
+    "price": 1600,
     "category": "paintings"
   },
   {
@@ -112,8 +112,8 @@
     "image": "/images/products/p-14.jpg",
     "name": "Dystopia",
     "artist": "BOSS667",
-    "dimentions": "0.4 × 0.5 cm",
-    "price": "$1.150,00",
+    "dimensions": "0.4 × 0.5 cm",
+    "price": 1150,
     "category": "paintings"
   },
   {
@@ -121,8 +121,8 @@
     "image": "/images/products/p-15.jpg",
     "name": "Comfort Life",
     "artist": "BOSS667",
-    "dimentions": "0.4 × 0.5 cm",
-    "price": "$990,00",
+    "dimensions": "0.4 × 0.5 cm",
+    "price": 990,
     "category": "paintings"
   },
   {
@@ -130,8 +130,8 @@
     "image": "/images/products/p-16.jpg",
     "name": "MindScratch",
     "artist": "ONEBRAN",
-    "dimentions": "0.37 × 0.53 cm",
-    "price": "$900,00",
+    "dimensions": "0.37 × 0.53 cm",
+    "price": 900,
     "category": "paintings"
   },
   {
@@ -139,8 +139,8 @@
     "image": "/images/products/p-17.jpg",
     "name": "Separate",
     "artist": "ONEBRAN",
-    "dimentions": "0.37 × 0.53 cm",
-    "price": "$760,00",
+    "dimensions": "0.37 × 0.53 cm",
+    "price": 760,
     "category": "paintings"
   },
   {
@@ -148,8 +148,8 @@
     "image": "/images/products/p-18.jpg",
     "name": "CounterPoint",
     "artist": "ONEBRAN",
-    "dimentions": "0.4 × 0.5 cm",
-    "price": "$1.500,00",
+    "dimensions": "0.4 × 0.5 cm",
+    "price": 1500,
     "category": "paintings"
   },
   {
@@ -157,8 +157,8 @@
     "image": "/images/products/p-19.jpg",
     "name": "RiotSociety",
     "artist": "ONEBRAN",
-    "dimentions": "1.2 × 1.2 cm",
-    "price": "$4.580,00",
+    "dimensions": "1.2 × 1.2 cm",
+    "price": 4580,
     "category": "paintings"
   },
   {
@@ -166,116 +166,116 @@
     "image": "/images/products/p-20.jpg",
     "name": "P0572102",
     "artist": "SOBER5083R",
-    "dimentions": "0.56 × 0.76 cm",
-    "price": "$1.850,00",
+    "dimensions": "0.56 × 0.76 cm",
+    "price": 1850,
     "category": "paintings"
   },
   {
     "id": "21",
     "image": "/images/products/p-21.jpg",
-    "name": "P0572101",
+    "name": "Elysian",
     "artist": "SOBER5083R",
-    "dimentions": "0.56 × 0.76 cm",
-    "price": "$1.850,00",
+    "dimensions": "0.40 × 0.50 cm",
+    "price": 1270,
     "category": "paintings"
   },
   {
     "id": "22",
     "image": "/images/products/p-22.jpg",
-    "name": "C0572101",
-    "artist": "SOBER5083R",
-    "dimentions": "0.5 × 0.7 cm",
-    "price": "$2.060,00",
+    "name": "Astral Projection",
+    "artist": "THEO_G",
+    "dimensions": "0.60 × 0.80 cm",
+    "price": 2980,
     "category": "paintings"
   },
   {
     "id": "23",
     "image": "/images/products/p-23.jpg",
-    "name": "C0712101",
-    "artist": "SOBER5083R",
-    "dimentions": "0.7 × 1 cm",
-    "price": "$2.900,00",
+    "name": "Gaia",
+    "artist": "THEO_G",
+    "dimensions": "1.50 × 1.50 cm",
+    "price": 6780,
     "category": "paintings"
   },
   {
     "id": "24",
     "image": "/images/products/p-24.jpg",
-    "name": "C1152101",
-    "artist": "SOBER5083R",
-    "dimentions": "1 × 1.5 cm",
-    "price": "$3.500,00",
+    "name": "The Cosmic Womb",
+    "artist": "THEO_G",
+    "dimensions": "1.20 × 1.50 cm",
+    "price": 5890,
     "category": "paintings"
   },
   {
     "id": "25",
     "image": "/images/products/p-25.jpg",
-    "name": "Sometime",
-    "artist": "GOSPEL",
-    "dimentions": "0.6 × 1 cm",
-    "price": "$3.000,00",
+    "name": "The Encoded Universe",
+    "artist": "VITRUVIAN_VR",
+    "dimensions": "0.80 × 1.00 cm",
+    "price": 3980,
     "category": "paintings"
   },
   {
     "id": "26",
     "image": "/images/products/p-26.jpg",
-    "name": "Minotaur",
-    "artist": "GOSPEL",
-    "dimentions": "0.5 × 0.7 cm",
-    "price": "$4.200,00",
+    "name": "Portals",
+    "artist": "VITRUVIAN_VR",
+    "dimensions": "0.80 × 1.00 cm",
+    "price": 3150,
     "category": "paintings"
   },
   {
     "id": "27",
     "image": "/images/products/p-27.jpg",
-    "name": "Light your fire to inspire",
-    "artist": "GOSPEL",
-    "dimentions": "0.5 × 0.5 cm",
-    "price": "$2.300,00",
+    "name": "The Fractal Nature",
+    "artist": "VITRUVIAN_VR",
+    "dimensions": "0.70 × 0.90 cm",
+    "price": 2650,
     "category": "paintings"
   },
   {
     "id": "28",
     "image": "/images/products/p-28.jpg",
-    "name": "Hope",
-    "artist": "GOSPEL",
-    "dimentions": "0.5 × 0.7 cm",
-    "price": "$3.360,00",
+    "name": "Crystal Reflections",
+    "artist": "VITRUVIAN_VR",
+    "dimensions": "0.70 × 0.90 cm",
+    "price": 2100,
     "category": "paintings"
   },
   {
     "id": "29",
     "image": "/images/products/p-29.jpg",
-    "name": "Untitled",
-    "artist": "SOTEUR",
-    "dimentions": "1 × 1 cm",
-    "price": "$4.100,00",
+    "name": "Dreamscape",
+    "artist": "ALEX_FP",
+    "dimensions": "0.80 × 1.00 cm",
+    "price": 1850,
     "category": "paintings"
   },
   {
     "id": "30",
     "image": "/images/products/p-30.jpg",
-    "name": "Untitled",
-    "artist": "SOTEUR",
-    "dimentions": "1.8 × 1.2 cm",
-    "price": "$4.600,00",
+    "name": "The Subconscious Voyage",
+    "artist": "ALEX_FP",
+    "dimensions": "0.70 × 0.90 cm",
+    "price": 1500,
     "category": "paintings"
   },
   {
     "id": "31",
     "image": "/images/products/p-31.jpg",
-    "name": "Untitled",
-    "artist": "SOTEUR",
-    "dimentions": "1 × 1 cm",
-    "price": "$3.970,00",
+    "name": "Ethereal",
+    "artist": "ALEX_FP",
+    "dimensions": "0.90 × 1.20 cm",
+    "price": 1970,
     "category": "paintings"
   },
   {
     "id": "32",
     "image": "/images/products/p-32.jpg",
-    "name": "Untitled",
-    "artist": "SOTEUR",
-    "dimentions": "1.5 × 0.8 cm",
-    "price": "$3.360,00",
+    "name": "Nostalgia",
+    "artist": "ALEX_FP",
+    "dimensions": "0.80 × 1.10 cm",
+    "price": 1850,
     "category": "paintings"
   },
   {
@@ -283,8 +283,8 @@
     "image": "/images/products/p-33.jpg",
     "name": "Death or Glory",
     "artist": "LUNE82, TEOKON",
-    "dimentions": "0.6 × 1 cm",
-    "price": "$3.200,00",
+    "dimensions": "0.60 × 1.00 cm",
+    "price": 3200,
     "category": "paintings"
   },
   {
@@ -292,8 +292,8 @@
     "image": "/images/products/p-34.jpg",
     "name": "Ingneus circulus",
     "artist": "ELENI NIKOLAOU",
-    "dimentions": "1.5 × 1 cm",
-    "price": "$3.100,00",
+    "dimensions": "1.50 × 1.00 cm",
+    "price": 3100,
     "category": "paintings"
   },
   {
@@ -301,8 +301,8 @@
     "image": "/images/products/p-35.jpg",
     "name": "New York",
     "artist": "AREA87",
-    "dimentions": "0.60 × 0.80 cm",
-    "price": "$2.593,00",
+    "dimensions": "0.60 × 0.80 cm",
+    "price": 2593,
     "category": "paintings"
   },
   {
@@ -310,8 +310,8 @@
     "image": "/images/products/p-36.jpg",
     "name": "Hug in the Rain",
     "artist": "AREA87",
-    "dimentions": "0.80 × 0.60 cm",
-    "price": "$2.750,00",
+    "dimensions": "0.80 × 0.60 cm",
+    "price": 2750,
     "category": "paintings"
   },
   {
@@ -319,8 +319,8 @@
     "image": "/images/products/p-37.jpg",
     "name": "Deceptio spei",
     "artist": "ELENI NIKOLAOU",
-    "dimentions": "1 × 1.1 cm",
-    "price": "$2.400,00",
+    "dimensions": "1.00 × 1.10 cm",
+    "price": 2400,
     "category": "paintings"
   },
   {
@@ -328,8 +328,8 @@
     "image": "/images/products/p-38.jpg",
     "name": "Naramus",
     "artist": "ELENI NIKOLAOU",
-    "dimentions": "1.7 × 1.39 cm",
-    "price": "$3.500,00",
+    "dimensions": "1.39 × 1.70 cm",
+    "price": 3500,
     "category": "paintings"
   },
   {
@@ -337,8 +337,8 @@
     "image": "/images/products/p-39.jpg",
     "name": "Self Portrait",
     "artist": "AREA87",
-    "dimentions": "0.40 × 0.50 cm",
-    "price": "$1.525,00",
+    "dimensions": "0.40 × 0.50 cm",
+    "price": 1525,
     "category": "paintings"
   },
   {
@@ -346,8 +346,8 @@
     "image": "/images/products/p-40.jpg",
     "name": "Feeding",
     "artist": "EMILY GAKI",
-    "dimentions": "0.4 × 0.6 cm",
-    "price": "$800,00",
+    "dimensions": "0.40 × 0.60 cm",
+    "price": 800,
     "category": "photography"
   },
   {
@@ -355,8 +355,8 @@
     "image": "/images/products/p-41.jpg",
     "name": "Fare",
     "artist": "EMILY GAKI",
-    "dimentions": "0.6 × 0.9 cm",
-    "price": "$900,00",
+    "dimensions": "0.60 × 0.90 cm",
+    "price": 900,
     "category": "photography"
   },
   {
@@ -364,8 +364,8 @@
     "image": "/images/products/p-42.jpg",
     "name": "Liba",
     "artist": "EMILY GAKI",
-    "dimentions": "0.6 × 0.9 cm",
-    "price": "$900,00",
+    "dimensions": "0.60 × 0.90 cm",
+    "price": 900,
     "category": "photography"
   },
   {
@@ -373,8 +373,8 @@
     "image": "/images/products/p-43.jpg",
     "name": "Samantha",
     "artist": "EMILY GAKI",
-    "dimentions": "0.6 × 0.9 cm",
-    "price": "$900,00",
+    "dimensions": "0.60 × 0.90 cm",
+    "price": 900,
     "category": "photography"
   },
   {
@@ -382,8 +382,8 @@
     "image": "/images/products/p-44.jpg",
     "name": "Sapphira",
     "artist": "EMILY GAKI",
-    "dimentions": "0.6 × 0.9 cm",
-    "price": "$900,00",
+    "dimensions": "0.60 × 0.90 cm",
+    "price": 900,
     "category": "photography"
   },
   {
@@ -391,8 +391,8 @@
     "image": "/images/products/p-45.jpg",
     "name": "Aya",
     "artist": "EMILY GAKI",
-    "dimentions": "0.6 × 0.9 cm",
-    "price": "$900,00",
+    "dimensions": "0.60 × 0.90 cm",
+    "price": 900,
     "category": "photography"
   },
   {
@@ -400,8 +400,8 @@
     "image": "/images/products/p-46.jpg",
     "name": "Photo Manipulation",
     "artist": "FRO",
-    "dimentions": "0.5 × 0.7 cm",
-    "price": "$2.100,00",
+    "dimensions": "0.5 × 0.7 cm",
+    "price": 2100,
     "category": "photography"
   },
   {
@@ -409,8 +409,8 @@
     "image": "/images/products/p-47.jpg",
     "name": "Ohia",
     "artist": "MAGDALENE STEFANATOU",
-    "dimentions": "1 × 0.70 cm",
-    "price": "$900,00",
+    "dimensions": "1.00 × 0.70 cm",
+    "price": 900,
     "category": "photography"
   },
   {
@@ -418,8 +418,8 @@
     "image": "/images/products/p-48.jpg",
     "name": "Thistles and Radioactive Ball",
     "artist": "MAGDALENE STEFANATOU",
-    "dimentions": "0.7 × 0.5 cm",
-    "price": "$730,00",
+    "dimensions": "0.70 × 0.50 cm",
+    "price": 730,
     "category": "photography"
   },
   {
@@ -427,8 +427,8 @@
     "image": "/images/products/p-49.jpg",
     "name": "The Fingers",
     "artist": "MAGDALENE STEFANATOU",
-    "dimentions": "0.7 × 0.5 cm",
-    "price": "$730,00",
+    "dimensions": "0.70 × 0.50 cm",
+    "price": 730,
     "category": "photography"
   },
   {
@@ -436,8 +436,8 @@
     "image": "/images/products/p-50.jpg",
     "name": "FUTURE IS NOW",
     "artist": "SOTIRIS SUB",
-    "dimentions": "0.5 × 0.5 cm",
-    "price": "$140,00",
+    "dimensions": "0.5 × 0.5 cm",
+    "price": 140,
     "category": "illustration"
   },
   {
@@ -445,8 +445,8 @@
     "image": "/images/products/p-51.jpg",
     "name": "CHANGE",
     "artist": "SOTIRIS SUB",
-    "dimentions": "0.4 × 0.5 cm",
-    "price": "$160,00",
+    "dimensions": "0.4 × 0.5 cm",
+    "price": 160,
     "category": "illustration"
   },
   {
@@ -454,8 +454,8 @@
     "image": "/images/products/p-52.jpg",
     "name": "URBAN BLOCKS",
     "artist": "SOTIRIS SUB",
-    "dimentions": "0.5 × 0.7 cm",
-    "price": "$190,00",
+    "dimensions": "0.5 × 0.7 cm",
+    "price": 190,
     "category": "illustration"
   },
   {
@@ -463,8 +463,8 @@
     "image": "/images/products/p-53.jpg",
     "name": "OPTIMIST",
     "artist": "SOTIRIS SUB",
-    "dimentions": "0.7 × 1 cm",
-    "price": "$230,00",
+    "dimensions": "0.7 × 1 cm",
+    "price": 230,
     "category": "illustration"
   },
   {
@@ -472,8 +472,8 @@
     "image": "/images/products/p-54.jpg",
     "name": "INSOMNIA",
     "artist": "SOTIRIS SUB",
-    "dimentions": "0.50 × 0.70 cm",
-    "price": "$250,00",
+    "dimensions": "0.50 × 0.70 cm",
+    "price": 250,
     "category": "illustration"
   },
   {
@@ -481,8 +481,8 @@
     "image": "/images/products/p-55.jpg",
     "name": "IGNORANCE IS A BLISS",
     "artist": "SOTIRIS SUB",
-    "dimentions": "0.4 × 0.5 cm",
-    "price": "$160,00",
+    "dimensions": "0.4 × 0.5 cm",
+    "price": 160,
     "category": "illustration"
   },
   {
@@ -490,8 +490,8 @@
     "image": "/images/products/p-56.jpg",
     "name": "Christine's Dream",
     "artist": "FRO",
-    "dimentions": "0.5 × 0.7 cm",
-    "price": "$2.150,00",
+    "dimensions": "0.5 × 0.7 cm",
+    "price": 2150,
     "category": "street-art"
   },
   {
@@ -499,8 +499,8 @@
     "image": "/images/products/p-57.jpg",
     "name": "Photo Manipulation",
     "artist": "FRO",
-    "dimentions": "0.5 × 0.7 cm",
-    "price": "$2.100,00",
+    "dimensions": "0.5 × 0.7 cm",
+    "price": 2100,
     "category": "street-art"
   },
   {
@@ -508,8 +508,8 @@
     "image": "/images/products/p-58.jpg",
     "name": "Overlap",
     "artist": "ONEBRAN",
-    "dimentions": "0.40 × 0.49 cm",
-    "price": "$1.600,00",
+    "dimensions": "0.40 × 0.49 cm",
+    "price": 1600,
     "category": "street-art"
   },
   {
@@ -517,8 +517,8 @@
     "image": "/images/products/p-59.jpg",
     "name": "Dystopia",
     "artist": "BOSS667",
-    "dimentions": "0.4 × 0.5 cm",
-    "price": "$1.150,00",
+    "dimensions": "0.4 × 0.5 cm",
+    "price": 1150,
     "category": "street-art"
   },
   {
@@ -526,8 +526,8 @@
     "image": "/images/products/p-60.jpg",
     "name": "Comfort Life",
     "artist": "BOSS667",
-    "dimentions": "0.4 × 0.5 cm",
-    "price": "$990,00",
+    "dimensions": "0.4 × 0.5 cm",
+    "price": 990,
     "category": "street-art"
   },
   {
@@ -535,8 +535,8 @@
     "image": "/images/products/p-61.jpg",
     "name": "MindScratch",
     "artist": "ONEBRAN",
-    "dimentions": "0.37 × 0.53 cm",
-    "price": "$900,00",
+    "dimensions": "0.37 × 0.53 cm",
+    "price": 900,
     "category": "street-art"
   },
   {
@@ -544,8 +544,8 @@
     "image": "/images/products/p-62.jpg",
     "name": "Separate",
     "artist": "ONEBRAN",
-    "dimentions": "0.37 × 0.53 cm",
-    "price": "$760,00",
+    "dimensions": "0.37 × 0.53 cm",
+    "price": 760,
     "category": "street-art"
   },
   {
@@ -553,8 +553,8 @@
     "image": "/images/products/p-63.jpg",
     "name": "CounterPoint",
     "artist": "ONEBRAN",
-    "dimentions": "0.4 × 0.5 cm",
-    "price": "$1.500,00",
+    "dimensions": "0.4 × 0.5 cm",
+    "price": 1500,
     "category": "street-art"
   },
   {
@@ -562,8 +562,8 @@
     "image": "/images/products/p-64.jpg",
     "name": "RiotSociety",
     "artist": "ONEBRAN",
-    "dimentions": "1.2 × 1.2 cm",
-    "price": "$4.580,00",
+    "dimensions": "1.2 × 1.2 cm",
+    "price": 4580,
     "category": "street-art"
   },
   {
@@ -571,8 +571,8 @@
     "image": "/images/products/p-65.jpg",
     "name": "P0572102",
     "artist": "SOBER5083R",
-    "dimentions": "0.56 × 0.76 cm",
-    "price": "$1.850,00",
+    "dimensions": "0.56 × 0.76 cm",
+    "price": 1850,
     "category": "street-art"
   },
   {
@@ -580,8 +580,8 @@
     "image": "/images/products/p-66.jpg",
     "name": "P0572101",
     "artist": "SOBER5083R",
-    "dimentions": "0.56 × 0.76 cm",
-    "price": "$1.850,00",
+    "dimensions": "0.56 × 0.76 cm",
+    "price": 1850,
     "category": "street-art"
   },
   {
@@ -589,8 +589,8 @@
     "image": "/images/products/p-67.jpg",
     "name": "C0572101",
     "artist": "SOBER5083R",
-    "dimentions": "0.5 × 0.7 cm",
-    "price": "$2.060,00",
+    "dimensions": "0.5 × 0.7 cm",
+    "price": 2060,
     "category": "street-art"
   },
   {
@@ -598,8 +598,8 @@
     "image": "/images/products/p-68.jpg",
     "name": "C0712101",
     "artist": "SOBER5083R",
-    "dimentions": "0.7 × 1 cm",
-    "price": "$2.900,00",
+    "dimensions": "0.7 × 1 cm",
+    "price": 2900,
     "category": "street-art"
   },
   {
@@ -607,8 +607,8 @@
     "image": "/images/products/p-69.jpg",
     "name": "C1152101",
     "artist": "SOBER5083R",
-    "dimentions": "1 × 1.5 cm",
-    "price": "$3.500,00",
+    "dimensions": "1 × 1.5 cm",
+    "price": 3500,
     "category": "street-art"
   },
   {
@@ -616,8 +616,8 @@
     "image": "/images/products/p-70.jpg",
     "name": "Spaghetti",
     "artist": "PROCORPSES",
-    "dimentions": "0.5 × 0.7 cm",
-    "price": "$1.250,00",
+    "dimensions": "0.5 × 0.7 cm",
+    "price": 1250,
     "category": "digital-art"
   },
   {
@@ -625,8 +625,8 @@
     "image": "/images/products/p-71.jpg",
     "name": "POPE II",
     "artist": "PROCORPSES",
-    "dimentions": "0.5 × 0.7 cm",
-    "price": "$1.250,00",
+    "dimensions": "0.5 × 0.7 cm",
+    "price": 1250,
     "category": "digital-art"
   },
   {
@@ -634,53 +634,53 @@
     "image": "/images/products/p-72.jpg",
     "name": "Motor",
     "artist": "PROCORPSES",
-    "dimentions": "0.5 × 0.7 cm",
-    "price": "$1.250,00",
+    "dimensions": "0.5 × 0.7 cm",
+    "price": 1250,
     "category": "digital-art"
   },
   {
     "id": "73",
     "image": "/images/products/p-73.jpg",
-    "name": "What's the Matter",
-    "artist": "PROCORPSES",
-    "dimentions": "0.5 × 0.7 cm",
-    "price": "$1.250,00",
+    "name": "Inktober",
+    "artist": "GEO GIZ",
+    "dimensions": "0.7 × 1 cm",
+    "price": 1750,
     "category": "digital-art"
   },
   {
     "id": "74",
     "image": "/images/products/p-74.jpg",
-    "name": "Too Much Bacon",
-    "artist": "PROCORPSES",
-    "dimentions": "0.5 × 0.7 cm",
-    "price": "$1.250,00",
+    "name": "Undead",
+    "artist": "GEO GIZ",
+    "dimensions": "0.7 × 1 cm",
+    "price": 1750,
     "category": "digital-art"
   },
   {
     "id": "75",
     "image": "/images/products/p-75.jpg",
-    "name": "You suck",
-    "artist": "PROCORPSES",
-    "dimentions": "0.5 × 0.7 cm",
-    "price": "$1.250,00",
+    "name": "Ramones",
+    "artist": "GEO GIZ",
+    "dimensions": "0.7 × 1 cm",
+    "price": 1750,
     "category": "digital-art"
   },
   {
     "id": "76",
     "image": "/images/products/p-76.jpg",
-    "name": "E.U",
-    "artist": "PROCORPSES",
-    "dimentions": "0.5 × 0.7 cm",
-    "price": "$1.250,00",
+    "name": "Serenity",
+    "artist": "GEO GIZ",
+    "dimensions": "0.7 × 1 cm",
+    "price": 1750,
     "category": "digital-art"
   },
   {
     "id": "77",
     "image": "/images/products/p-77.jpg",
-    "name": "NEW EYES",
-    "artist": "PROCORPSES",
-    "dimentions": "0.5 × 0.7 cm",
-    "price": "$1.250,00",
+    "name": "Dance of the Fireflies",
+    "artist": "LUMINOX",
+    "dimensions": "1 × 1 cm",
+    "price": 2500,
     "category": "digital-art"
   }
 ]
