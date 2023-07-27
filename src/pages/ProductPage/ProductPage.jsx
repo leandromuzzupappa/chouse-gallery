@@ -15,7 +15,6 @@ export const ProductPage = () => {
     const getProductData = async () => {
       const product = await getProductById(productId);
 
-      console.log(product);
       setProduct(product);
     };
 
