@@ -13,6 +13,7 @@
     "@react-three/drei": "^9.76.0",
     "@react-three/fiber": "^8.13.3",
     "@react-three/postprocessing": "^2.14.12",
+    "firebase": "^10.1.0",
     "gsap": "^3.12.1",
     "leva": "^0.9.35",
     "react": "^18.2.0",
