@@ -1,5 +1,6 @@
 import "./CartWidget.css";
 import { useContext, useRef, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { CartContext } from "../../context/CartContext";
 import { CartProduct } from "../CartProduct/CartProduct";
@@ -124,7 +125,9 @@ export const CartWidget = () => {
               ))}
             </div>
 
-            <button className="cartModal--checkout">Checkout</button>
+            <Link className="cartModal--checkout" to="/checkout">
+              Checkout
+            </Link>
           </div>
 
           <div

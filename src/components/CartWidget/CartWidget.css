@@ -134,8 +134,10 @@ span.cartModal--header-total {
   gap: 1rem;
 }
 
-button.cartModal--checkout {
-  color: white;
+.cartModal--checkout {
+  color: #333;
+  display: block;
+  width: 100%;
   position: sticky;
   bottom: -20px;
   background: var(--yellow-500);
@@ -143,8 +145,15 @@ button.cartModal--checkout {
   padding: 1rem 0;
   border-radius: 10px;
   margin-top: 2rem;
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--inter-font);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-button.cartModal--checkout:hover {
+.cartModal--checkout:hover {
   background: var(--orange-500);
+  color: white;
 }
