@@ -61,11 +61,19 @@ export const ProductPage = () => {
           Back to {product.category}
         </Link>
         <h1>{product.name}</h1>
-        <p>{product.dimentions}</p>
+        <p>
+          <strong>Dimensions:</strong> <br />
+          {product.dimensions}
+        </p>
 
         <div className="product-page--content-actions">
           <div className="price">
-            <span>{productPrice}</span>
+            <span>
+              {productPrice.toLocaleString("es-AR", {
+                style: "currency",
+                currency: "ARS",
+              })}
+            </span>
 
             <div className="quantity">
               <button onClick={onDecreaseQuantity}>-</button>

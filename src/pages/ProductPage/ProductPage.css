@@ -46,9 +46,9 @@
 
 .product-page--content {
   --product-page-content-width: 40vw;
-  --product-page-content-height: 100vh;
-  --product-page-content-padding: 6rem 2rem;
-  --product-page-content-border-radius: 0 24px 24px 0;
+  --product-page-content-height: 70vh;
+  --product-page-content-padding: 3rem 2rem;
+  --product-page-content-border-radius: 0 24px 0 0;
 
   background-color: #fff;
   border-radius: var(--product-page-content-border-radius);
@@ -58,6 +58,7 @@
   padding: var(--product-page-content-padding);
   position: relative;
   width: var(--product-page-content-width);
+  margin-top: auto;
   overflow: hidden;
 }
 
@@ -144,6 +145,7 @@
 }
 
 .product-page--media {
+  position: relative;
   width: 100%;
   display: grid;
   place-content: center;
