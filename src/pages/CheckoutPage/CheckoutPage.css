@@ -65,10 +65,28 @@
 
 .checkout--form-item input {
   width: 100%;
-  padding: 0.8rem 1rem;
+  padding: 1.5rem 1rem;
   border: none;
   background: #e235ee;
   border-radius: 8px;
+  transition: background 0.2s ease-in-out;
+}
+
+.checkout--form-item input:focus {
+  background: #ea357a;
+}
+
+.checkout--form-item-error {
+  position: relative;
+  top: -1rem;
+  background: rgb(109, 0, 0);
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  padding: 1.5rem 1rem 0.5rem;
+  color: white;
+  z-index: -1;
+  border-radius: 0 0 10px 10px;
 }
 
 .checkout--order {
@@ -124,4 +142,30 @@
 .item-name {
   font-family: var(--cormorant-font);
   font-size: 24px;
+}
+
+.order {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  color: white;
+  display: none;
+  width: 100%;
+}
+
+.order h2 {
+  font-size: 48px;
+  line-height: 80px;
+}
+
+.order h3 {
+  font-size: 28px;
+}
+
+.order span {
+  font-family: var(--cormorant-font);
+  font-size: 48px;
+  background: magenta;
+  padding: 0.5rem 1rem;
 }
