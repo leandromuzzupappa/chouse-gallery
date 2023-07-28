@@ -1,16 +1,20 @@
 import "./ProductPage.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import { getProductById } from "../../services/productService";
 import { ProductMedia } from "../../components/ProductMedia/ProductMedia";
+import { CartContext } from "../../context/CartContext";
 
 const pattern = Math.random() > 0.5 ? "bg-rectangles" : "bg-rhombus";
 
 export const ProductPage = () => {
-  const { productId } = useParams();
   const navigate = useNavigate();
+  const { addItem } = useContext(CartContext);
+
+  const { productId } = useParams();
   const [product, setProduct] = useState({});
   const [quantity, setQuantity] = useState(1);
+  const [productPrice, setProductPrice] = useState(0);
 
   useEffect(() => {
     const getProductData = async () => {
@@ -22,14 +26,26 @@ export const ProductPage = () => {
     getProductData();
   }, [productId]);
 
-  const increaseQuantity = () => {
+  useEffect(() => {
+    if (!product.price) return;
+
+    setProductPrice(product.price * quantity);
+  }, [quantity, product.price]);
+
+  const onIncreaseQuantity = () => {
     setQuantity(quantity + 1);
+    setProductPrice(product.price * quantity);
   };
 
-  const decreaseQuantity = () => {
+  const onDecreaseQuantity = () => {
     if (quantity > 1) {
       setQuantity(quantity - 1);
+      setProductPrice(product.price * quantity);
     }
+  };
+
+  const onAddToCart = () => {
+    addItem(product, quantity);
   };
 
   return (
@@ -49,16 +65,18 @@ export const ProductPage = () => {
 
         <div className="product-page--content-actions">
           <div className="price">
-            <span>{product.price}</span>
+            <span>{productPrice}</span>
 
             <div className="quantity">
-              <button onClick={decreaseQuantity}>-</button>
+              <button onClick={onDecreaseQuantity}>-</button>
               <span>{quantity}</span>
-              <button onClick={increaseQuantity}>+</button>
+              <button onClick={onIncreaseQuantity}>+</button>
             </div>
           </div>
 
-          <button className="addToCart">Add to cart</button>
+          <button className="addToCart" onClick={onAddToCart}>
+            Add to cart
+          </button>
         </div>
       </div>
       <div className="product-page--media">
