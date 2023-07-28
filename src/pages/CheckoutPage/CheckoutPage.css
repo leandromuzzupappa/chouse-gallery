@@ -1,0 +1,127 @@
+.checkout-page {
+  --checkout-page-padding: 6rem 2rem 2rem 2rem;
+  --bg-gradient-clr-1: #d848d864;
+  --bg-gradient-clr-2: #2840f511;
+  --bg-gradient-stroke: 1.2px;
+  --bg-size: 110px;
+
+  background-color: var(--bg-gradient-clr-2);
+  background-image: linear-gradient(
+      var(--bg-gradient-clr-1) var(--bg-gradient-stroke),
+      transparent var(--bg-gradient-stroke)
+    ),
+    linear-gradient(
+      to right,
+      var(--bg-gradient-clr-1) var(--bg-gradient-stroke),
+      var(--bg-gradient-clr-2) var(--bg-gradient-stroke)
+    );
+  background-size: var(--bg-size) var(--bg-size);
+  background-attachment: fixed;
+  padding: var(--checkout-page-padding);
+  min-height: 100dvh;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.checkout--wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.checkout--content {
+  grid-column: 1 / span 3;
+  position: sticky;
+  top: 50px;
+}
+
+.checkout--form-item-submit {
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.checkout--form-item-submit:hover {
+  background: var(--yellow-500);
+}
+
+.checkout--form-item {
+  margin: 1.5rem 0;
+}
+
+.checkout--form-item label {
+  display: block;
+  font-family: var(--cormorant-font);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.checkout--form-item input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: none;
+  background: #e235ee;
+  border-radius: 8px;
+}
+
+.checkout--order {
+  position: relative;
+  grid-column: 4 / span 5;
+  padding: 0 20px;
+  color: white;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.checkout--order-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 44vw;
+  height: 100vh;
+  background: #2840f5;
+  z-index: -1;
+}
+
+.checkout--order h2 {
+  font-family: var(--cormorant-font);
+  font-size: 64px;
+  margin-bottom: 1rem;
+}
+
+.checkout--order a {
+  color: white;
+  display: block;
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.checkout--order h2 span {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.checkout--order-item {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.checkout--order-item img {
+  width: 100px;
+}
+
+.item-name {
+  font-family: var(--cormorant-font);
+  font-size: 24px;
+}
