@@ -44,7 +44,7 @@ export const ProductMedia = ({ image }) => {
       >
         <Wave imageSrc={image} myRef={waveRef} />
 
-        <OrbitControls />
+        <OrbitControls maxDistance={15} minDistance={4} />
       </Canvas>
     </>
   );
