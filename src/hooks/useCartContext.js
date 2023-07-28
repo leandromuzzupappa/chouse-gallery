@@ -1,41 +1,35 @@
 import { useState, useEffect } from "react";
 
+function loadCart() {
+  const _cart = localStorage.getItem("cart");
+  return _cart ? JSON.parse(_cart) : [];
+}
+
+function persistCart(cart) {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
+
 export const useCartContext = () => {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(loadCart);
 
   useEffect(() => {
-    const persistCart = () => {
-      localStorage.setItem("cart", JSON.stringify(cart));
-    };
-
-    const loadCart = () => {
-      const cart = localStorage.getItem("cart");
-      if (cart) {
-        setCart(JSON.parse(cart));
-      }
-    };
-
-    if (cart.length === 0) {
-      loadCart();
-    } else {
-      persistCart();
-    }
+    persistCart(cart);
   }, [cart]);
 
-  const addItem = (item, quantity) => {
-    const itemIndex = cart.findIndex((i) => i.item.id === item.id);
+  const addItem = (product, quantity) => {
+    const productIndex = cart.findIndex((i) => i.product.id === product.id);
 
-    if (itemIndex > -1) {
+    if (productIndex > -1) {
       const newCart = [...cart];
-      newCart[itemIndex].quantity += quantity;
+      newCart[productIndex].quantity += quantity;
       setCart(newCart);
     } else {
-      setCart([...cart, { item, quantity }]);
+      setCart([...cart, { product, quantity }]);
     }
   };
 
-  const removeItem = (itemId) => {
-    const newCart = cart.filter((i) => i.item.id !== itemId);
+  const removeItem = (productId) => {
+    const newCart = cart.filter((i) => i.product.id !== productId);
     setCart(newCart);
   };
 
@@ -44,11 +38,36 @@ export const useCartContext = () => {
   };
 
   const isInCart = (id) => {
-    return cart.some((i) => i.item.id === id);
+    return cart.some((i) => i.product.id === id);
+  };
+
+  const increaseOne = (id) => {
+    const newCart = [...cart];
+    const productIndex = cart.findIndex((i) => i.product.id === id);
+    newCart[productIndex].quantity += 1;
+    setCart(newCart);
+  };
+
+  const decreaseOne = (id) => {
+    const newCart = [...cart];
+    const productIndex = cart.findIndex((i) => i.product.id === id);
+
+    if (newCart[productIndex].quantity === 1) {
+      removeItem(id);
+      return;
+    }
+
+    newCart[productIndex].quantity -= 1;
+    setCart(newCart);
   };
 
   const getTotal = () => {
-    return cart.reduce((acc, i) => acc + i.item.price * i.quantity, 0);
+    return cart
+      .reduce((acc, i) => acc + i.product.price * i.quantity, 0)
+      .toLocaleString("es-AR", {
+        style: "currency",
+        currency: "ARS",
+      });
   };
 
   const getQuantity = () => {
@@ -61,6 +80,8 @@ export const useCartContext = () => {
     removeItem,
     clear,
     isInCart,
+    increaseOne,
+    decreaseOne,
     getTotal,
     getQuantity,
   };
