@@ -18,20 +18,24 @@ export const ProductMedia = ({ image }) => {
     const x = (clientX / innerWidth) * 2 - 1;
     const y = -(clientY / innerHeight) * 2 + 1;
 
-    gsap.to(waveRef.current.position, {
-      duration: 1,
-      ease: "power3.out",
-      x: x * 0.2,
-      y: y * 0.2,
-    });
+    if (waveRef.current) {
+      gsap.to(waveRef.current.position, {
+        duration: 1,
+        ease: "power3.out",
+        x: x * 0.2,
+        y: y * 0.2,
+      });
+    }
   };
   const handleMouseLeave = () => {
-    gsap.to(waveRef.current.position, {
-      duration: 1,
-      ease: "elastic.out(1, .3)",
-      x: 0,
-      y: 0,
-    });
+    if (waveRef.current) {
+      gsap.to(waveRef.current.position, {
+        duration: 1,
+        ease: "elastic.out(1, .3)",
+        x: 0,
+        y: 0,
+      });
+    }
   };
 
   return (
