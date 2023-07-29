@@ -125,7 +125,11 @@ export const CartWidget = () => {
               ))}
             </div>
 
-            <Link className="cartModal--checkout" to="/checkout">
+            <Link
+              className="cartModal--checkout"
+              to="/checkout"
+              onClick={() => setIsOpen(false)}
+            >
               Checkout
             </Link>
           </div>
