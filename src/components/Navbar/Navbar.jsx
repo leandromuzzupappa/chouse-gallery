@@ -37,7 +37,7 @@ export const Navbar = () => {
 
         <div className="navbar--actions">
           <CartWidget />
-          <button className="login">Login</button>
+          {/* <button className="login">Login</button> */}
         </div>
       </nav>
 
