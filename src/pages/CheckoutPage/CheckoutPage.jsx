@@ -10,6 +10,7 @@ export const CheckoutPage = () => {
 
   const timelineRef = useRef(null);
   const contentRef = useRef(null);
+  const buyButtonRef = useRef(null);
   const checkoutRef = useRef(null);
   const backgroundRef = useRef(null);
   const orderRef = useRef(null);
@@ -55,10 +56,24 @@ export const CheckoutPage = () => {
     return Object.keys(errors).length === 0;
   };
 
+  const onSendingData = () => {
+    contentRef.current.style.pointerEvents = "none";
+
+    if (buyButtonRef.current) {
+      Object.assign(buyButtonRef.current.style, {
+        pointerEvents: "none",
+        backgroundColor: "gray",
+      });
+
+      buyButtonRef.current.innerText = "Placing order...";
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     setFormErrors({});
+    onSendingData();
 
     const order = {
       buyer: formData,
@@ -67,7 +82,20 @@ export const CheckoutPage = () => {
       total: getTotal(),
     };
 
-    if (!handleOrderValidations(order)) return;
+    if (!handleOrderValidations(order)) {
+      contentRef.current.style.pointerEvents = "auto";
+
+      if (buyButtonRef.current) {
+        Object.assign(buyButtonRef.current.style, {
+          pointerEvents: "all",
+          backgroundColor: "black",
+        });
+
+        buyButtonRef.current.innerText = "Place order";
+      }
+
+      return;
+    }
 
     const orderId = await addCheckoutSnapshot(order);
     setOrder(orderId);
@@ -186,7 +214,11 @@ export const CheckoutPage = () => {
                 </span>
               )}
             </div>
-            <button className="checkout--form-item-submit" type="submit">
+            <button
+              ref={buyButtonRef}
+              className="checkout--form-item-submit"
+              type="submit"
+            >
               Place order
             </button>
           </form>
