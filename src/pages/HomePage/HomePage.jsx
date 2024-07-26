@@ -35,7 +35,6 @@ export const HomePage = () => {
         // setIsLoading(false);
 
         if (!loading && !error) {
-          console.log("lenny", data);
           const {
             allDigitalArtGalleries,
             allIllustrationGalleries,

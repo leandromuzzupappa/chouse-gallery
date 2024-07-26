@@ -86,6 +86,7 @@ export const ProductGridGL = ({
               myRef={waveRef}
               sizes={{ width, height }}
               position={{ top, left }}
+              progress={progress}
               velocity={velocity}
             />
           );
@@ -97,13 +98,14 @@ export const ProductGridGL = ({
   );
 };
 
-const Image = ({ imageSrc, myRef, sizes, position, velocity }) => {
+const Image = ({ imageSrc, myRef, sizes, position, velocity, progress }) => {
   const imageRef = useRef();
 
   useFrame(({ clock }) => {
     if (imageRef.current) {
       imageRef.current.uTime = clock.elapsedTime;
       imageRef.current.uVelocity = velocity * 10;
+      imageRef.current.uProgress = progress;
     }
   });
 
@@ -112,7 +114,7 @@ const Image = ({ imageSrc, myRef, sizes, position, velocity }) => {
   return (
     <Suspense fallback={null}>
       <mesh ref={myRef} position={[position.left, position.top * -1, 1]}>
-        <planeGeometry args={[sizes.width, sizes.height, 16, 16]} />
+        <planeGeometry args={[sizes.width, sizes.height, 100, 100]} />
         <dissortImageMaterial uColor="blue" uTexture={image} ref={imageRef} />
       </mesh>
     </Suspense>

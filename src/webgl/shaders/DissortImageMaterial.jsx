@@ -9,16 +9,25 @@ export const DissortImageMaterial = shaderMaterial(
     uTime: 0,
     uTexture: new THREE.Texture(),
     uVelocity: 0,
+    uProgress: 0,
   },
   /* glsl */ `
       precision mediump float;
   
       uniform float uTime;
+      uniform float uProgress;
+      uniform float uVelocity;
       varying vec2 vUv;
   
       void main() {
           vUv = uv;
-          gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+
+          vec3 pos = position;
+          pos.x += sin(uv.y * 5. + uTime * 2.5) * 0.1 * uVelocity;
+
+          pos.x *= 1. - uVelocity * .0002;
+
+          gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
       }
     `,
   /* glsl */ `
