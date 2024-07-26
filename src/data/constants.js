@@ -6,3 +6,7 @@ export const FIREBASE_CONFIG = {
   messagingSenderId: import.meta.env.VITE_FIREBASE_MSG_SENDER_ID,
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
+
+export const DATO = {
+  token: import.meta.env.VITE_DATO_API_TOKEN,
+}
