@@ -1,4 +1,5 @@
 .homepage {
+  --grid-gap: .5rem;
   --homepage-padding: 6rem 2rem 2rem 2rem;
   --bg-gradient-clr-1: #ebf3fc;
   --bg-gradient-clr-2: #fff;
@@ -6,25 +7,39 @@
   --bg-size: 110px;
 
   background-color: var(--bg-gradient-clr-2);
-  background-image: linear-gradient(
+  background-image: linear-gradient(var(--bg-gradient-clr-1) var(--bg-gradient-stroke),
+      transparent var(--bg-gradient-stroke)),
+    linear-gradient(to right,
       var(--bg-gradient-clr-1) var(--bg-gradient-stroke),
-      transparent var(--bg-gradient-stroke)
-    ),
-    linear-gradient(
-      to right,
-      var(--bg-gradient-clr-1) var(--bg-gradient-stroke),
-      var(--bg-gradient-clr-2) var(--bg-gradient-stroke)
-    );
+      var(--bg-gradient-clr-2) var(--bg-gradient-stroke));
   background-size: var(--bg-size) var(--bg-size);
   background-attachment: fixed;
   padding: var(--homepage-padding);
 }
 
 .homepage--grid {
+  opacity: 0;
+  pointer-events: none;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  column-gap: 3rem;
-  row-gap: 3rem;
+  gap: var(--grid-gap);
+}
+
+.homepage--grid-gl {
+  border: 1px solid red;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.homepage--grid-gl canvas {
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 
 @media screen and (max-width: 1000px) {

@@ -3,8 +3,9 @@
 }
 
 .product-card {
-  width: 100%;
+  position: relative;
   transition: filter 0.3s ease;
+  width: 100%;
 }
 
 .product-card a {
@@ -18,14 +19,16 @@
 }
 
 .product-card:hover .product-card--media {
-  border-radius: 32px;
+  border-radius: .5rem;
 }
 
 .product-card--media img {
-  width: 100%;
-  display: block;
+  aspect-ratio: 9 / 16;
   border: 0;
+  display: block;
+  object-fit: cover;
   transition: scale 0.3s ease;
+  width: 100%;
 }
 
 .product-card:hover .product-card--media img {
@@ -33,10 +36,15 @@
 }
 
 .product-card--info {
+  bottom: 1rem;
+  left: 1rem;
   padding: var(--product-card-info-padding);
+  position: absolute;
+  width: calc(100% - 2rem);
 }
 
 .product-card--info h3 {
+  color: #fff;
   font-size: 0.9rem;
   font-weight: 500;
   scale: 1;

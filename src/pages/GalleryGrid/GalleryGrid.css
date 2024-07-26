@@ -8,15 +8,11 @@
   --bg-size: 110px;
 
   background-color: var(--bg-gradient-clr-2);
-  background-image: linear-gradient(
+  background-image: linear-gradient(var(--bg-gradient-clr-1) var(--bg-gradient-stroke),
+      transparent var(--bg-gradient-stroke)),
+    linear-gradient(to right,
       var(--bg-gradient-clr-1) var(--bg-gradient-stroke),
-      transparent var(--bg-gradient-stroke)
-    ),
-    linear-gradient(
-      to right,
-      var(--bg-gradient-clr-1) var(--bg-gradient-stroke),
-      var(--bg-gradient-clr-2) var(--bg-gradient-stroke)
-    );
+      var(--bg-gradient-clr-2) var(--bg-gradient-stroke));
   background-size: var(--bg-size) var(--bg-size);
   background-attachment: fixed;
 
@@ -34,8 +30,7 @@
 .gallery-page--grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  column-gap: 3rem;
-  row-gap: 3rem;
+  column-gap: .5rem;
 }
 
 @media screen and (max-width: 1000px) {
